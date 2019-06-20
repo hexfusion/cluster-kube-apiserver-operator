@@ -126,6 +126,7 @@ func RunOperator(ctx *controllercmd.ControllerContext) error {
 			{Resource: "namespaces", Name: operatorclient.GlobalMachineSpecifiedConfigNamespace},
 			{Resource: "namespaces", Name: operatorclient.OperatorNamespace},
 			{Resource: "namespaces", Name: operatorclient.TargetNamespace},
+			{Resource: "namespaces", Name: "openshift-etcd"},
 		},
 		configClient.ConfigV1(),
 		configInformers.Config().V1().ClusterOperators(),
