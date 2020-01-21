@@ -329,6 +329,8 @@ spec:
           echo -n "."
           sleep 1
         done
+      securityContext:
+        privileged: true
   containers:
   - name: kube-apiserver-REVISION
     image: ${IMAGE}
